@@ -1,0 +1,23 @@
+@import url("animations.css");
+@import url("custom-select.css");
+
+* {
+	font-family: "Press Start 2P", monospace;
+}
+
+body {
+	background-color: #010103;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+
+}
+
+.logo img {
+	width: 400px;
+	height: auto;
+}

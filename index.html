@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./styles/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet" />
+
+		<title>KOSMOS</title>
+	</head>
+	<body>
+		<div class="stars-container">
+			<div class="stars stars-1"></div>
+			<div class="stars stars-2"></div>
+			<div class="stars stars-3"></div>
+		</div>
+
+		<header class="header">
+			<div class="logo">
+				<img
+					src="./img/logo/logo.png"
+					alt="KOSMOS" />
+			</div>
+		</header>
+
+		<div class="planet-selectors">
+			<div class="planet-selector">
+				<div
+					class="custom-select"
+					id="select-1">
+					<button
+						type="button"
+						class="select-button"
+						aria-haspopup="listbox"
+						aria-expanded="false">
+						<span class="selected-value">Марс</span>
+						<span class="select-arrow"></span>
+					</button>
+					<ul
+						class="select-dropdown"
+						tabindex="-1"
+						role="listbox">
+						<li
+							class="select-option"
+							data-value="mercury">
+							Меркурий
+						</li>
+						<li
+							class="select-option"
+							data-value="venus">
+							Венера
+						</li>
+						<li
+							class="select-option"
+							data-value="earth">
+							Земля
+						</li>
+						<li
+							class="select-option selected"
+							data-value="mars">
+							Марс
+						</li>
+						<li
+							class="select-option"
+							data-value="jupiter">
+							Юпитер
+						</li>
+						<li
+							class="select-option"
+							data-value="saturn">
+							Сатурн
+						</li>
+						<li
+							class="select-option"
+							data-value="uranus">
+							Уран
+						</li>
+						<li
+							class="select-option"
+							data-value="neptune">
+							Нептун
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="vs">VS</div>
+			<div class="planet-selector">
+				<div
+					class="custom-select"
+					id="select-2">
+					<button
+						type="button"
+						class="select-button"
+						aria-haspopup="listbox"
+						aria-expanded="false">
+						<span class="selected-value">Земля</span>
+						<span class="select-arrow"></span>
+					</button>
+					<ul
+						class="select-dropdown"
+						tabindex="-1"
+						role="listbox">
+						<li
+							class="select-option"
+							data-value="mercury">
+							Меркурий
+						</li>
+						<li
+							class="select-option"
+							data-value="venus">
+							Венера
+						</li>
+						<li
+							class="select-option selected"
+							data-value="earth">
+							Земля
+						</li>
+						<li
+							class="select-option"
+							data-value="mars">
+							Марс
+						</li>
+						<li
+							class="select-option"
+							data-value="jupiter">
+							Юпитер
+						</li>
+						<li
+							class="select-option"
+							data-value="saturn">
+							Сатурн
+						</li>
+						<li
+							class="select-option"
+							data-value="uranus">
+							Уран
+						</li>
+						<li
+							class="select-option"
+							data-value="neptune">
+							Нептун
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script></script>
+
+		<script
+			type="module"
+			src="js/script.js"></script>
+	</body>
+</html>

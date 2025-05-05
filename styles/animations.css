@@ -1,0 +1,56 @@
+.stars-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.stars {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(
+		2px 2px at calc(var(--x) * 100%) calc(var(--y) * 100%),
+		var(--star-color),
+		transparent
+	);
+	background-size: 200px 200px;
+	animation: stars-animation linear infinite;
+}
+
+.stars-1 {
+	--star-color: rgba(255, 255, 255, 0.8);
+	--x: 0.5;
+	--y: 0.5;
+	animation-duration: 200s;
+}
+
+.stars-2 {
+	--star-color: rgba(255, 255, 255, 0.5);
+	--x: 0.3;
+	--y: 0.7;
+	animation-duration: 200s;
+	background-size: 300px 300px;
+}
+
+.stars-3 {
+	--star-color: rgba(255, 255, 255, 0.3);
+	--x: 0.7;
+	--y: 0.2;
+	animation-duration: 200s;
+	background-size: 400px 400px;
+}
+
+@keyframes stars-animation {
+	0% {
+		transform: rotate(0deg) translateZ(0);
+	}
+	100% {
+		transform: rotate(360deg) translateZ(0);
+	}
+}
