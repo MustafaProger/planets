@@ -20,3 +20,8 @@ header {
 	width: 400px;
 	height: auto;
 }
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}

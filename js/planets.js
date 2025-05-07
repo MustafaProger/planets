@@ -1,11 +1,11 @@
 export const planets = {
 	mercury: {
-		name: "Mercury",
-		image: '../img/planets/Mercury.png',
+		name: "Меркурий",
+		image: "../img/planets/Mercury.png",
 		diameter: {
 			km: 4879,
 			smartphones: 60988,
-			comparison: "Mercury's diameter equals 60,988 stacked smartphones",
+			comparison: "Диаметр Меркурия равен 60 988 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
@@ -16,14 +16,14 @@ export const planets = {
 			household: {
 				item: "🔥",
 				description:
-					"Mercury's surface can reach 430°C, hotter than your oven's self-cleaning cycle",
+					"Поверхность Меркурия достигает 430 °C — горячее, чем цикл самоочистки духовки",
 			},
 		},
 		mass: {
 			kg: 3.3e23,
 			earthMass: 0.055,
 			elephants: 55000000000,
-			comparison: "Mercury weighs as much as 55 billion elephants",
+			comparison: "Масса Меркурия равна массе 55 миллиардов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -35,17 +35,17 @@ export const planets = {
 			},
 			airplaneTrips: 1448,
 			comparison:
-				"Mercury's orbit equals 1,448 trips around Earth in an airplane",
+				"Орбита Меркурия равна 1448 кругосветным перелётам на самолёте",
 		},
 	},
 
 	venus: {
-		name: "Venus",
-		image: '../img/planets/Venus.png',
+		name: "Венера",
+		image: "../img/planets/Venus.png",
 		diameter: {
 			km: 12104,
 			smartphones: 151300,
-			comparison: "Venus's diameter equals 151,300 stacked smartphones",
+			comparison: "Диаметр Венеры равен 151 300 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
@@ -55,14 +55,15 @@ export const planets = {
 			},
 			household: {
 				item: "🔥🔥",
-				description: "Venus is 465°C, hot enough to melt lead and zinc",
+				description:
+					"Температура на Венере достигает 465 °C — этого достаточно, чтобы расплавить свинец и цинк",
 			},
 		},
 		mass: {
 			kg: 4.87e24,
 			earthMass: 0.815,
 			elephants: 812000000000,
-			comparison: "Venus weighs as much as 812 billion elephants",
+			comparison: "Масса Венеры равна массе 812 миллиардов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -73,18 +74,17 @@ export const planets = {
 				days: 225,
 			},
 			airplaneTrips: 2705,
-			comparison:
-				"Venus's orbit equals 2,705 trips around Earth in an airplane",
+			comparison: "Орбита Венеры равна 2705 кругосветным перелётам на самолёте",
 		},
 	},
 
 	earth: {
-		name: "Earth",
-		image: '../img/planets/Earth.png',
+		name: "Земля",
+		image: "../img/planets/Earth.png",
 		diameter: {
 			km: 12742,
 			smartphones: 159275,
-			comparison: "Earth's diameter equals 159,275 stacked smartphones",
+			comparison: "Диаметр Земли равен 159 275 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
@@ -94,15 +94,14 @@ export const planets = {
 			},
 			household: {
 				item: "☕",
-				description:
-					"Earth's average temperature is 15°C, about the same as a cup of coffee that's been sitting out",
+				description: "Средняя температура Земли — 15 °C, как у остывшего кофе",
 			},
 		},
 		mass: {
 			kg: 5.97e24,
 			earthMass: 1,
 			elephants: 995000000000,
-			comparison: "Earth weighs as much as 995 billion elephants",
+			comparison: "Масса Земли равна массе 995 миллиардов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -113,18 +112,17 @@ export const planets = {
 				days: 365.25,
 			},
 			airplaneTrips: 3740,
-			comparison:
-				"Earth's orbit equals 3,740 trips around itself in an airplane",
+			comparison: "Орбита Земли равна 3740 кругосветным перелётам на самолёте",
 		},
 	},
 
 	mars: {
-		name: "Mars",
-		image: '../img/planets/Mars.png',
+		name: "Марс",
+		image: "../img/planets/Mars.png",
 		diameter: {
 			km: 6779,
 			smartphones: 84738,
-			comparison: "Mars's diameter equals 84,738 stacked smartphones",
+			comparison: "Диаметр Марса равен 84 738 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
@@ -135,14 +133,14 @@ export const planets = {
 			household: {
 				item: "❄️",
 				description:
-					"Mars's average temperature is -63°C, colder than your freezer",
+					"Средняя температура на Марсе — -63 °C, холоднее, чем в морозильнике",
 			},
 		},
 		mass: {
 			kg: 6.42e23,
 			earthMass: 0.107,
 			elephants: 107000000000,
-			comparison: "Mars weighs as much as 107 billion elephants",
+			comparison: "Масса Марса равна массе 107 миллиардов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -153,18 +151,18 @@ export const planets = {
 				days: 687,
 			},
 			airplaneTrips: 5698,
-			comparison: "Mars's orbit equals 5,698 trips around Earth in an airplane",
+			comparison: "Орбита Марса равна 5698 кругосветным перелётам на самолёте",
 		},
 	},
 
 	jupiter: {
-		name: "Jupiter",
-		image: '../img/planets/Jupiter.png',
+		name: "Юпитер",
+		image: "../img/planets/Jupiter.png",
 		diameter: {
 			km: 139820,
 			smartphones: 1747750,
 			comparison:
-				"Jupiter's diameter equals over 1.7 million stacked smartphones",
+				"Диаметр Юпитера равен более 1,7 миллионам уложенных смартфонов",
 		},
 		temperature: {
 			celsius: {
@@ -175,14 +173,14 @@ export const planets = {
 			household: {
 				item: "❄️❄️",
 				description:
-					"Jupiter's cloud tops are -145°C, much colder than the coldest place on Earth",
+					"Верхние облака Юпитера — -145 °C, холоднее самого холодного места на Земле",
 			},
 		},
 		mass: {
 			kg: 1.9e27,
 			earthMass: 318,
 			elephants: 316410000000000,
-			comparison: "Jupiter weighs as much as 316 trillion elephants",
+			comparison: "Масса Юпитера равна массе 316 триллионов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -194,18 +192,18 @@ export const planets = {
 			},
 			airplaneTrips: 19458,
 			comparison:
-				"Jupiter's orbit equals 19,458 trips around Earth in an airplane",
+				"Орбита Юпитера равна 19458 кругосветным перелётам на самолёте",
 		},
 	},
 
 	saturn: {
-		name: "Saturn",
-		image: '../img/planets/Saturn.png',
+		name: "Сатурн",
+		image: "../img/planets/Saturn.png",
 		diameter: {
 			km: 116460,
 			smartphones: 1455750,
 			comparison:
-				"Saturn's diameter equals over 1.4 million stacked smartphones",
+				"Диаметр Сатурна равен более 1,4 миллионам уложенных смартфонов",
 		},
 		temperature: {
 			celsius: {
@@ -215,14 +213,15 @@ export const planets = {
 			},
 			household: {
 				item: "❄️❄️❄️",
-				description: "Saturn is -178°C, cold enough to freeze oxygen",
+				description:
+					"Температура на Сатурне — -178 °C, достаточно низкая, чтобы заморозить кислород",
 			},
 		},
 		mass: {
 			kg: 5.68e26,
 			earthMass: 95,
 			elephants: 94525000000000,
-			comparison: "Saturn weighs as much as 94.5 trillion elephants",
+			comparison: "Масса Сатурна равна массе 94,5 триллионов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -234,17 +233,17 @@ export const planets = {
 			},
 			airplaneTrips: 35675,
 			comparison:
-				"Saturn's orbit equals 35,675 trips around Earth in an airplane",
+				"Орбита Сатурна равна 35675 кругосветным перелётам на самолёте",
 		},
 	},
 
 	uranus: {
-		name: "Uranus",
-		image: '../img/planets/Uranus.png',
+		name: "Уран",
+		image: "../img/planets/Uranus.png",
 		diameter: {
 			km: 50724,
 			smartphones: 634050,
-			comparison: "Uranus's diameter equals 634,050 stacked smartphones",
+			comparison: "Диаметр Урана равен 634 050 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
@@ -255,14 +254,14 @@ export const planets = {
 			household: {
 				item: "☠️❄️",
 				description:
-					"Uranus is -195°C, near the temperature used for cryogenic storage",
+					"Температура Урана — -195 °C, почти как в условиях криосохранения",
 			},
 		},
 		mass: {
 			kg: 8.68e25,
 			earthMass: 14.5,
 			elephants: 14427500000000,
-			comparison: "Uranus weighs as much as 14.4 trillion elephants",
+			comparison: "Масса Урана равна массе 14,4 триллионов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -273,18 +272,17 @@ export const planets = {
 				days: 30687,
 			},
 			airplaneTrips: 71775,
-			comparison:
-				"Uranus's orbit equals 71,775 trips around Earth in an airplane",
+			comparison: "Орбита Урана равна 71775 кругосветным перелётам на самолёте",
 		},
 	},
 
 	neptune: {
-		name: "Neptune",
-		image: '../img/planets/Neptune.png',
+		name: "Нептун",
+		image: "../img/planets/Neptune.png",
 		diameter: {
 			km: 49244,
 			smartphones: 615550,
-			comparison: "Neptune's diameter equals 615,550 stacked smartphones",
+			comparison: "Диаметр Нептуна равен 615 550 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
@@ -294,14 +292,14 @@ export const planets = {
 			},
 			household: {
 				item: "☠️❄️",
-				description: "Neptune is -200°C, nearly as cold as liquid nitrogen",
+				description: "Температура Нептуна — -200 °C, почти как у жидкого азота",
 			},
 		},
 		mass: {
 			kg: 1.02e26,
 			earthMass: 17.1,
 			elephants: 17014500000000,
-			comparison: "Neptune weighs as much as 17 trillion elephants",
+			comparison: "Масса Нептуна равна массе 17 триллионов слонов",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -313,7 +311,7 @@ export const planets = {
 			},
 			airplaneTrips: 112425,
 			comparison:
-				"Neptune's orbit equals 112,425 trips around Earth in an airplane",
+				"Орбита Нептуна равна 112425 кругосветным перелётам на самолёте",
 		},
 	},
 };

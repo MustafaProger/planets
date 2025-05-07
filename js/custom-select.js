@@ -30,7 +30,6 @@ export default function setupCustomSelect(customSelect, getOtherSelectedValue) {
 			option.classList.add("selected");
 			selectedValue.textContent = option.textContent;
 			closeDropdown();
-			// После выбора обновляем видимость опций в другом селекте
 			if (typeof customSelect.onChange === "function") customSelect.onChange();
 		});
 	});
@@ -39,7 +38,6 @@ export default function setupCustomSelect(customSelect, getOtherSelectedValue) {
 		if (!customSelect.contains(e.target)) closeDropdown();
 	});
 
-	// Скрытие выбранной опции из другого селекта
 	function updateOptions() {
 		const otherValue = getOtherSelectedValue();
 		options.forEach((opt) => {
