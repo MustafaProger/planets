@@ -1,7 +1,7 @@
 export const planets = {
 	mercury: {
 		name: "Меркурий",
-		image: "../img/planets/Mercury.png",
+		image: "./img/planets/Mercury.png",
 		diameter: {
 			km: 4879,
 			smartphones: 60988,
@@ -41,7 +41,7 @@ export const planets = {
 
 	venus: {
 		name: "Венера",
-		image: "../img/planets/Venus.png",
+		image: "./img/planets/Venus.png",
 		diameter: {
 			km: 12104,
 			smartphones: 151300,
@@ -80,7 +80,7 @@ export const planets = {
 
 	earth: {
 		name: "Земля",
-		image: "../img/planets/Earth.png",
+		image: "./img/planets/Earth.png",
 		diameter: {
 			km: 12742,
 			smartphones: 159275,
@@ -118,7 +118,7 @@ export const planets = {
 
 	mars: {
 		name: "Марс",
-		image: "../img/planets/Mars.png",
+		image: "./img/planets/Mars.png",
 		diameter: {
 			km: 6779,
 			smartphones: 84738,
@@ -157,7 +157,7 @@ export const planets = {
 
 	jupiter: {
 		name: "Юпитер",
-		image: "../img/planets/Jupiter.png",
+		image: "./img/planets/Jupiter.png",
 		diameter: {
 			km: 139820,
 			smartphones: 1747750,
@@ -198,7 +198,7 @@ export const planets = {
 
 	saturn: {
 		name: "Сатурн",
-		image: "../img/planets/Saturn.png",
+		image: "./img/planets/Saturn.png",
 		diameter: {
 			km: 116460,
 			smartphones: 1455750,
@@ -239,7 +239,7 @@ export const planets = {
 
 	uranus: {
 		name: "Уран",
-		image: "../img/planets/Uranus.png",
+		image: "./img/planets/Uranus.png",
 		diameter: {
 			km: 50724,
 			smartphones: 634050,
@@ -278,7 +278,7 @@ export const planets = {
 
 	neptune: {
 		name: "Нептун",
-		image: "../img/planets/Neptune.png",
+		image: "./img/planets/Neptune.png",
 		diameter: {
 			km: 49244,
 			smartphones: 615550,
