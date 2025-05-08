@@ -14,6 +14,37 @@ document.addEventListener("DOMContentLoaded", () => {
 	select1.updateOptions();
 	select2.updateOptions();
 
-	setupSelect("select-1", document.querySelector(".planet-comparison__item--1"));
-	setupSelect("select-2", document.querySelector(".planet-comparison__item--2"));
+	function getItem(dataType, side) {
+		return document.querySelector(
+			`.container__block[data-type="${dataType}"] .planet-comparison__item--${side}`
+		);
+	}
+
+	setupSelect(
+		"select-1",
+		getItem("diameter", 1),
+		"planet-comparison__number_diameter",
+		"diameter.smartphones",
+		true
+	);
+	setupSelect(
+		"select-2",
+		getItem("diameter", 2),
+		"planet-comparison__number_diameter",
+		"diameter.smartphones",
+		true
+	);
+
+	setupSelect(
+		"select-1",
+		getItem("temperature", 1),
+		"planet-comparison__number_temp",
+		"temperature.celsius.average"
+	);
+	setupSelect(
+		"select-2",
+		getItem("temperature", 2),
+		"planet-comparison__number_temp",
+		"temperature.celsius.average"
+	);
 });

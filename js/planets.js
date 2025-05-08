@@ -11,7 +11,7 @@ export const planets = {
 			celsius: {
 				day: 430,
 				night: -180,
-				average: 167,
+				average: "🔥 167",
 			},
 			household: {
 				item: "🔥",
@@ -51,7 +51,7 @@ export const planets = {
 			celsius: {
 				day: 465,
 				night: 465,
-				average: 465,
+				average: "🔥🔥 465",
 			},
 			household: {
 				item: "🔥🔥",
@@ -90,7 +90,7 @@ export const planets = {
 			celsius: {
 				day: 15,
 				night: 0,
-				average: 15,
+				average: "☕ 15",
 			},
 			household: {
 				item: "☕",
@@ -128,7 +128,7 @@ export const planets = {
 			celsius: {
 				day: 20,
 				night: -73,
-				average: -63,
+				average: "❄️ -63",
 			},
 			household: {
 				item: "❄️",
@@ -168,7 +168,7 @@ export const planets = {
 			celsius: {
 				day: -145,
 				night: -145,
-				average: -145,
+				average: "❄️❄️ -145",
 			},
 			household: {
 				item: "❄️❄️",
@@ -209,7 +209,7 @@ export const planets = {
 			celsius: {
 				day: -178,
 				night: -178,
-				average: -178,
+				average: "❄️❄️❄️ -178",
 			},
 			household: {
 				item: "❄️❄️❄️",
@@ -249,7 +249,7 @@ export const planets = {
 			celsius: {
 				day: -195,
 				night: -195,
-				average: -195,
+				average: "☠️❄️ -195",
 			},
 			household: {
 				item: "☠️❄️",
@@ -288,7 +288,7 @@ export const planets = {
 			celsius: {
 				day: -200,
 				night: -200,
-				average: -200,
+				average: "☠️❄️ -200",
 			},
 			household: {
 				item: "☠️❄️",
