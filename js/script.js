@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	select1.updateOptions();
 	select2.updateOptions();
 
-	setupSelect("select-1", document.querySelector(".planet-1"));
-	setupSelect("select-2", document.querySelector(".planet-2"));
+	setupSelect("select-1", document.querySelector(".planet-comparison__item--1"));
+	setupSelect("select-2", document.querySelector(".planet-comparison__item--2"));
 });

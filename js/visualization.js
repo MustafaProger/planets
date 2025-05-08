@@ -2,12 +2,12 @@ import { planets } from "./planets";
 
 function updateComparisonArrow(outputElement1, outputElement2) {
 	const value1 = parseInt(
-		outputElement1.querySelector(".data-planet_numbers").textContent
+		outputElement1.querySelector(".planet-comparison__number").textContent
 	);
 	const value2 = parseInt(
-		outputElement2.querySelector(".data-planet_numbers").textContent
+		outputElement2.querySelector(".planet-comparison__number").textContent
 	);
-	const arrowImg = document.querySelector(".comparison img");
+	const arrowImg = document.querySelector(".planet-comparison__arrow img");
 
 	if (value1 > value2) {
 		arrowImg.src = "./img/arrow/arrow-right.svg";
@@ -20,7 +20,7 @@ export default function setupSelect(selectId, outputElement) {
 	const select = document.getElementById(selectId);
 	const options = select.querySelectorAll(".select-option");
 	const planetImg = outputElement.querySelector("img");
-	const numbers = outputElement.querySelector(".data-planet_numbers");
+	const numbers = outputElement.querySelector(".planet-comparison__number");
 
 	const renderPlanet = (value) => {
 		const data = planets[value];
@@ -34,8 +34,8 @@ export default function setupSelect(selectId, outputElement) {
 		numbers.textContent = data.diameter.smartphones;
 
 		updateComparisonArrow(
-			document.querySelector(".planet-1"),
-			document.querySelector(".planet-2")
+			document.querySelector(".planet-comparison__item--1"),
+			document.querySelector(".planet-comparison__item--2")
 		);
 	};
 
