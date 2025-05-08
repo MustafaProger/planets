@@ -10,19 +10,13 @@ function updateComparisonArrow(outputElement1, outputElement2) {
 	const arrowImg = document.querySelector(".comparison img");
 
 	if (value1 > value2) {
-		arrowImg.src = "./img/arrow/arrow-left.svg";
-	} else if (value1 < value2) {
 		arrowImg.src = "./img/arrow/arrow-right.svg";
+	} else if (value1 < value2) {
+		arrowImg.src = "./img/arrow/arrow-left.svg";
 	}
-
-	console.log(value1, value2)
 }
 
-export default function setupSelect(
-	selectId,
-	outputElement,
-	otherOutputElement
-) {
+export default function setupSelect(selectId, outputElement) {
 	const select = document.getElementById(selectId);
 	const options = select.querySelectorAll(".select-option");
 	const planetImg = outputElement.querySelector("img");
@@ -39,7 +33,10 @@ export default function setupSelect(
 		planetImg.style.width = `${size}px`;
 		numbers.textContent = data.diameter.smartphones;
 
-		updateComparisonArrow(outputElement, otherOutputElement);
+		updateComparisonArrow(
+			document.querySelector(".planet-1"),
+			document.querySelector(".planet-2")
+		);
 	};
 
 	options.forEach((option) => {

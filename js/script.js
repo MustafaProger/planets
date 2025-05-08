@@ -14,9 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	select1.updateOptions();
 	select2.updateOptions();
 
-	const planet1 = document.querySelector(".planet-1");
-	const planet2 = document.querySelector(".planet-2");
-
-	setupSelect("select-1", planet1, planet2);
-	setupSelect("select-2", planet2, planet1);
+	setupSelect("select-1", document.querySelector(".planet-1"));
+	setupSelect("select-2", document.querySelector(".planet-2"));
 });
