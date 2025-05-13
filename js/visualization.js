@@ -29,21 +29,33 @@ export default function setupSelect(
 	outputElement,
 	numberClass,
 	pathToValue,
-	hasImage = false
+	descrClass,
+	descrValue,
+	hasImage = false,
+	emojiClass = null,
+	emojiValue = null
 ) {
 	const select = document.getElementById(selectId);
 	const options = select.querySelectorAll(".select-option");
 	const numberEl = outputElement.querySelector(`.${numberClass}`);
+	const descrEl = outputElement.querySelector(`.${descrClass}`);
+	const emojiEl = outputElement.querySelector(`.${emojiClass}`);
 	const planetImg = outputElement.querySelector("img");
 
 	function renderPlanet(value) {
 		const data = planets[value];
 		if (!data) return;
 
-		const valueToShow = getNestedValue(data, pathToValue);
-		if (valueToShow == null || !numberEl) return;
+		const valueDigits = getNestedValue(data, pathToValue);
+		numberEl.textContent = valueDigits;
 
-		numberEl.textContent = valueToShow;
+		const valueDescr = getNestedValue(data, descrValue);
+		descrEl.textContent = valueDescr;
+
+		if (emojiClass && emojiValue) {
+			const valueEmoji = getNestedValue(data, emojiValue);
+			emojiEl.textContent = valueEmoji;
+		}
 
 		if (hasImage && planetImg && data.image && data.diameter?.km) {
 			const size = 100 * (data.diameter.km / 50000);

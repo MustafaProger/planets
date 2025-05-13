@@ -24,14 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
 		"select-1",
 		getItem("diameter", 1),
 		"planet-comparison__number_diameter",
-		"diameter.smartphones",
+		"diameter.km",
+		"planet-comparison__descr",
+		"diameter.comparison",
 		true
 	);
+
 	setupSelect(
 		"select-2",
 		getItem("diameter", 2),
 		"planet-comparison__number_diameter",
-		"diameter.smartphones",
+		"diameter.km",
+		"planet-comparison__descr",
+		"diameter.comparison",
 		true
 	);
 
@@ -39,12 +44,23 @@ document.addEventListener("DOMContentLoaded", () => {
 		"select-1",
 		getItem("temperature", 1),
 		"planet-comparison__number_temp",
-		"temperature.celsius.average"
+		"temperature.celsius.average",
+		"planet-comparison__descr",
+		"temperature.household.description",
+		false,
+		"planet-comparison__number_emoji",
+		"temperature.household.item"
 	);
+
 	setupSelect(
 		"select-2",
 		getItem("temperature", 2),
 		"planet-comparison__number_temp",
-		"temperature.celsius.average"
+		"temperature.celsius.average",
+		"planet-comparison__descr",
+		"temperature.household.description",
+		false,
+		"planet-comparison__number_emoji",
+		"temperature.household.item"
 	);
 });
