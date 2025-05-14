@@ -63,4 +63,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		"planet-comparison__number_emoji",
 		"temperature.household.item"
 	);
+
+	setupSelect(
+		"select-1",
+		getItem("mass", 1),
+		"planet-comparison__number_mass",
+		"mass.uranusMass",
+		"planet-comparison__descr",
+		"mass.comparison",
+		"planet-comparison__img"
+	);
+
+	setupSelect(
+		"select-2",
+		getItem("mass", 2),
+		"planet-comparison__number_mass",
+		"mass.uranusMass",
+		"planet-comparison__descr",
+		"mass.comparison",
+		"planet-comparison__img"
+	);
 });

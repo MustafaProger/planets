@@ -114,12 +114,25 @@ header {
 	justify-self: end;
 
 }
+
 [data-type="temperature"] .planet-comparison__item--1 .planet-comparison__number_emoji {
 	justify-self: end;
 }
 
 [data-type="temperature"] .planet-comparison__number_emoji {
 	font-size: 35px;
+}
+
+[data-type="mass"] .planet-comparison__img-wrapper {
+	max-width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+[data-type="mass"] .planet-comparison__item img {
+	width: 24px;
 }
 
 .planet-comparison__arrow {

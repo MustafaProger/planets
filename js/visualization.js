@@ -57,12 +57,37 @@ export default function setupSelect(
 			emojiEl.textContent = valueEmoji;
 		}
 
-		if (hasImage && planetImg && data.image && data.diameter?.km) {
+		if (
+			hasImage &&
+			planetImg &&
+			data.image &&
+			data.diameter?.km &&
+			hasImage !== "planet-comparison__img"
+		) {
 			const size = 100 * (data.diameter.km / 50000);
 			planetImg.src = data.image;
 			planetImg.alt = data.name;
 			planetImg.style.height = `${size}px`;
 			planetImg.style.width = `${size}px`;
+		}
+
+		if (planets.uranus.image && hasImage === "planet-comparison__img") {
+			const container = outputElement.querySelector(
+				".planet-comparison__img-wrapper"
+			);
+			container.innerHTML = "";
+
+			const count = Math.floor(data.mass.uranusMass);
+
+			if (count > 0) {
+				for (let i = 0; i < count; i++) {
+					const img = document.createElement("img");
+					img.src = planets.uranus.image;
+					img.alt = "Уран";
+					img.classList.add("planet-comparison__img");
+					container.appendChild(img);
+				}
+			}
 		}
 
 		updateComparisonArrow(
