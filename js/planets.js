@@ -4,13 +4,10 @@ export const planets = {
 		image: "./img/planets/Mercury.png",
 		diameter: {
 			km: 4879,
-			smartphones: 60988,
 			comparison: "Диаметр Меркурия равен 60 988 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
-				day: 430,
-				night: -180,
 				average: 167,
 			},
 			household: {
@@ -20,10 +17,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 3.3e23,
-			earthMass: 0.055,
-			elephants: 55000000000,
-			comparison: "Масса Меркурия равна массе 55 миллиардов слонов",
+			uranusMass: 0.004,
+			comparison: "Масса Меркурия равна 0,004 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -44,13 +39,10 @@ export const planets = {
 		image: "./img/planets/Venus.png",
 		diameter: {
 			km: 12104,
-			smartphones: 151300,
 			comparison: "Диаметр Венеры равен 151 300 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
-				day: 465,
-				night: 465,
 				average: 465,
 			},
 			household: {
@@ -60,10 +52,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 4.87e24,
-			earthMass: 0.815,
-			elephants: 812000000000,
-			comparison: "Масса Венеры равна массе 812 миллиардов слонов",
+			uranusMass: 0.056,
+			comparison: "Масса Венеры равна 0,056 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -83,13 +73,10 @@ export const planets = {
 		image: "./img/planets/Earth.png",
 		diameter: {
 			km: 12742,
-			smartphones: 159275,
 			comparison: "Диаметр Земли равен 159 275 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
-				day: 15,
-				night: 0,
 				average: 15,
 			},
 			household: {
@@ -98,10 +85,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 5.97e24,
-			earthMass: 1,
-			elephants: 995000000000,
-			comparison: "Масса Земли равна массе 995 миллиардов слонов",
+			uranusMass: 0.069,
+			comparison: "Масса Земли равна 0,069 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -121,13 +106,10 @@ export const planets = {
 		image: "./img/planets/Mars.png",
 		diameter: {
 			km: 6779,
-			smartphones: 84738,
 			comparison: "Диаметр Марса равен 84 738 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
-				day: 20,
-				night: -73,
 				average: -63,
 			},
 			household: {
@@ -137,10 +119,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 6.42e23,
-			earthMass: 0.107,
-			elephants: 107000000000,
-			comparison: "Масса Марса равна массе 107 миллиардов слонов",
+			uranusMass: 0.007,
+			comparison: "Масса Марса равна 0,007 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -160,14 +140,11 @@ export const planets = {
 		image: "./img/planets/Jupiter.png",
 		diameter: {
 			km: 139820,
-			smartphones: 1747750,
 			comparison:
 				"Диаметр Юпитера равен более 1,7 миллионам уложенных смартфонов",
 		},
 		temperature: {
 			celsius: {
-				day: -145,
-				night: -145,
 				average: -145,
 			},
 			household: {
@@ -177,10 +154,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 1.9e27,
-			earthMass: 318,
-			elephants: 316410000000000,
-			comparison: "Масса Юпитера равна массе 316 триллионов слонов",
+			uranusMass: 21.894,
+			comparison: "Масса Юпитера равна 21,894 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -201,14 +176,11 @@ export const planets = {
 		image: "./img/planets/Saturn.png",
 		diameter: {
 			km: 116460,
-			smartphones: 1455750,
 			comparison:
 				"Диаметр Сатурна равен более 1,4 миллионам уложенных смартфонов",
 		},
 		temperature: {
 			celsius: {
-				day: -178,
-				night: -178,
 				average: -178,
 			},
 			household: {
@@ -218,10 +190,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 5.68e26,
-			earthMass: 95,
-			elephants: 94525000000000,
-			comparison: "Масса Сатурна равна массе 94,5 триллионов слонов",
+			uranusMass: 6.546,
+			comparison: "Масса Сатурна равна 6,546 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -242,13 +212,10 @@ export const planets = {
 		image: "./img/planets/Uranus.png",
 		diameter: {
 			km: 50724,
-			smartphones: 634050,
 			comparison: "Диаметр Урана равен 634 050 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
-				day: -195,
-				night: -195,
 				average: 195,
 			},
 			household: {
@@ -258,10 +225,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 8.68e25,
-			earthMass: 14.5,
-			elephants: 14427500000000,
-			comparison: "Масса Урана равна массе 14,4 триллионов слонов",
+			uranusMass: 1,
+			comparison: "Масса Урана равна 1,000 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
@@ -281,13 +246,10 @@ export const planets = {
 		image: "./img/planets/Neptune.png",
 		diameter: {
 			km: 49244,
-			smartphones: 615550,
 			comparison: "Диаметр Нептуна равен 615 550 уложенным смартфонам",
 		},
 		temperature: {
 			celsius: {
-				day: -200,
-				night: -200,
 				average: -200,
 			},
 			household: {
@@ -296,10 +258,8 @@ export const planets = {
 			},
 		},
 		mass: {
-			kg: 1.02e26,
-			earthMass: 17.1,
-			elephants: 17014500000000,
-			comparison: "Масса Нептуна равна массе 17 триллионов слонов",
+			uranusMass: 1.176,
+			comparison: "Масса Нептуна равна 1,176 массам Урана",
 		},
 		orbit: {
 			distanceFromSun: {
