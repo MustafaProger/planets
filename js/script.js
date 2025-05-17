@@ -83,4 +83,21 @@ document.addEventListener("DOMContentLoaded", () => {
 		"mass.comparison",
 		"planet-comparison__img"
 	);
+
+	setupSelect(
+		"select-1",
+		getItem("orbit", 1),
+		"planet-comparison__number_orbit",
+		"orbit.distanceFromSun.au",
+		"planet-comparison__descr",
+		"orbit.comparison"
+	);
+	setupSelect(
+		"select-2",
+		getItem("orbit", 2),
+		"planet-comparison__number_orbit",
+		"orbit.distanceFromSun.au",
+		"planet-comparison__descr",
+		"orbit.comparison"
+	);
 });

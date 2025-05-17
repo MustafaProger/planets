@@ -22,11 +22,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 57.9e6,
 				au: 0.39,
-			},
-			period: {
-				days: 88,
 			},
 			airplaneTrips: 1448,
 			comparison:
@@ -57,11 +53,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 108.2e6,
 				au: 0.72,
-			},
-			period: {
-				days: 225,
 			},
 			airplaneTrips: 2705,
 			comparison: "Орбита Венеры равна 2705 кругосветным перелётам на самолёте",
@@ -90,11 +82,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 149.6e6,
 				au: 1,
-			},
-			period: {
-				days: 365.25,
 			},
 			airplaneTrips: 3740,
 			comparison: "Орбита Земли равна 3740 кругосветным перелётам на самолёте",
@@ -124,11 +112,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 227.9e6,
 				au: 1.52,
-			},
-			period: {
-				days: 687,
 			},
 			airplaneTrips: 5698,
 			comparison: "Орбита Марса равна 5698 кругосветным перелётам на самолёте",
@@ -159,11 +143,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 778.3e6,
 				au: 5.2,
-			},
-			period: {
-				days: 4333,
 			},
 			airplaneTrips: 19458,
 			comparison:
@@ -195,11 +175,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 1427e6,
 				au: 9.54,
-			},
-			period: {
-				days: 10759,
 			},
 			airplaneTrips: 35675,
 			comparison:
@@ -216,7 +192,7 @@ export const planets = {
 		},
 		temperature: {
 			celsius: {
-				average: 195,
+				average: -195,
 			},
 			household: {
 				item: "☠️❄️",
@@ -230,11 +206,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 2871e6,
 				au: 19.18,
-			},
-			period: {
-				days: 30687,
 			},
 			airplaneTrips: 71775,
 			comparison: "Орбита Урана равна 71775 кругосветным перелётам на самолёте",
@@ -263,11 +235,7 @@ export const planets = {
 		},
 		orbit: {
 			distanceFromSun: {
-				km: 4497e6,
 				au: 30.07,
-			},
-			period: {
-				days: 60190,
 			},
 			airplaneTrips: 112425,
 			comparison:
