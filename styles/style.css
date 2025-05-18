@@ -17,6 +17,7 @@
 
 body {
 	background-color: #010103;
+	overflow-x: hidden;
 }
 
 header {
@@ -106,16 +107,21 @@ header {
 	grid-column: 1/3;
 }
 
-[data-type="temperature"] .planet-comparison__item--1 .planet-comparison__number_temp {
+[data-type="temperature"]
+	.planet-comparison__item--1
+	.planet-comparison__number_temp {
 	justify-self: start;
 }
 
-[data-type="temperature"] .planet-comparison__item--2 .planet-comparison__number_temp {
+[data-type="temperature"]
+	.planet-comparison__item--2
+	.planet-comparison__number_temp {
 	justify-self: end;
-
 }
 
-[data-type="temperature"] .planet-comparison__item--1 .planet-comparison__number_emoji {
+[data-type="temperature"]
+	.planet-comparison__item--1
+	.planet-comparison__number_emoji {
 	justify-self: end;
 }
 
@@ -153,6 +159,34 @@ header {
 	line-height: 27px;
 	text-shadow: 0 2px 35px rgba(255, 255, 255, 0.4), 0 -1px 1px #947533,
 		0 1px 1px #cab05c;
+}
+
+.relative-wrapper {
+	position: absolute;
+}
+
+.sun__container {
+	position: absolute;
+	top: -1300px;
+	right: 60%;
+	z-index: 1;
+}
+
+.sun__img {
+	display: block;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.distance__container {
+	position: relative;
+	right: 10%;
+}
+
+@media (max-width: 1600px) {
+	.relative-wrapper {
+		display: none;
+	}
 }
 
 @media (max-width: 813px) {

@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		"planet-comparison__descr",
 		"orbit.comparison"
 	);
+
 	setupSelect(
 		"select-2",
 		getItem("orbit", 2),
