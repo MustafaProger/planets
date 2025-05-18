@@ -14,6 +14,18 @@ export default defineConfig({
 					if (assetInfo.name && assetInfo.name.endsWith(".css")) {
 						return "styles/[name][extname]";
 					}
+					if (
+						assetInfo.name &&
+						/\.(png|jpe?g|svg|gif|webp|ico)$/.test(assetInfo.name)
+					) {
+						return "img/[name][extname]";
+					}
+					if (
+						assetInfo.name &&
+						/\.(woff2?|ttf|eot|otf)$/.test(assetInfo.name)
+					) {
+						return "fonts/[name][extname]";
+					}
 					return "assets/[name][extname]";
 				},
 			},
@@ -22,9 +34,8 @@ export default defineConfig({
 	plugins: [
 		viteStaticCopy({
 			targets: [
-				{ src: "img", dest: "img" },
+				{ src: "img/*", dest: "img" },
 				{ src: "fonts", dest: "fonts" },
-				{ src: "js", dest: "js" },
 				{ src: "styles", dest: "styles" },
 			],
 		}),
