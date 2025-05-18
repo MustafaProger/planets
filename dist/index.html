@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet" />
+
+		<title>KOSMOS</title>
+		<script type="module" crossorigin src="/js/index.js"></script>
+		<link rel="stylesheet" crossorigin href="/styles/index.css">
+	</head>
+	<body>
+		<div class="stars-container">
+			<div class="stars stars-1"></div>
+			<div class="stars stars-2"></div>
+			<div class="stars stars-3"></div>
+		</div>
+
+		<header class="header">
+			<div class="logo">
+				<img
+					src="/assets/logo.png"
+					alt="KOSMOS" />
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="planet-selectors">
+				<div class="planet-selector">
+					<div
+						class="custom-select"
+						id="select-1">
+						<button
+							type="button"
+							class="select-button"
+							aria-haspopup="listbox"
+							aria-expanded="false">
+							<span class="selected-value">Марс</span>
+							<span class="select-arrow"></span>
+						</button>
+						<ul
+							class="select-dropdown"
+							tabindex="-1"
+							role="listbox">
+							<li
+								class="select-option"
+								data-value="mercury">
+								Меркурий
+							</li>
+							<li
+								class="select-option"
+								data-value="venus">
+								Венера
+							</li>
+							<li
+								class="select-option"
+								data-value="earth">
+								Земля
+							</li>
+							<li
+								class="select-option selected"
+								data-value="mars">
+								Марс
+							</li>
+							<li
+								class="select-option"
+								data-value="jupiter">
+								Юпитер
+							</li>
+							<li
+								class="select-option"
+								data-value="saturn">
+								Сатурн
+							</li>
+							<li
+								class="select-option"
+								data-value="uranus">
+								Уран
+							</li>
+							<li
+								class="select-option"
+								data-value="neptune">
+								Нептун
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="vs">VS</div>
+				<div class="planet-selector">
+					<div
+						class="custom-select"
+						id="select-2">
+						<button
+							type="button"
+							class="select-button"
+							aria-haspopup="listbox"
+							aria-expanded="false">
+							<span class="selected-value">Земля</span>
+							<span class="select-arrow"></span>
+						</button>
+						<ul
+							class="select-dropdown"
+							tabindex="-1"
+							role="listbox">
+							<li
+								class="select-option"
+								data-value="mercury">
+								Меркурий
+							</li>
+							<li
+								class="select-option"
+								data-value="venus">
+								Венера
+							</li>
+							<li
+								class="select-option selected"
+								data-value="earth">
+								Земля
+							</li>
+							<li
+								class="select-option"
+								data-value="mars">
+								Марс
+							</li>
+							<li
+								class="select-option"
+								data-value="jupiter">
+								Юпитер
+							</li>
+							<li
+								class="select-option"
+								data-value="saturn">
+								Сатурн
+							</li>
+							<li
+								class="select-option"
+								data-value="uranus">
+								Уран
+							</li>
+							<li
+								class="select-option"
+								data-value="neptune">
+								Нептун
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Диаметр -->
+			<div
+				class="container__block"
+				data-type="diameter">
+				<h1 class="title">Диаметр, км</h1>
+				<p class="descr">Расстояние между противоположными точками экватора</p>
+				<div class="planet-comparison">
+					<div class="planet-comparison__item planet-comparison__item--1">
+						<img
+							src="/assets/Mars.png"
+							alt="Mars" />
+						<div
+							class="planet-comparison__number planet-comparison__number_diameter">
+							0
+						</div>
+						<div class="planet-comparison__descr">
+							Диаметр Марса равен 84 738 уложенным смартфонам
+						</div>
+					</div>
+
+					<div class="planet-comparison__arrow">
+						<img
+							src="data:image/svg+xml,%3csvg%20width='52'%20height='76'%20viewBox='0%200%2052%2076'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_137_235)'%3e%3cpath%20d='M43%2010H35V18H27V26H19V34H11V42H19V50H27V58H35V66H43V50H35V42H27V34H35V26H43V10Z'%20fill='%23FCB303'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_137_235'%20x='0'%20y='0'%20width='52'%20height='76'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dx='-1'/%3e%3cfeGaussianBlur%20stdDeviation='5'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.988235%200%200%200%200%200.701961%200%200%200%200%200.0117647%200%200%200%200.5%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_137_235'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_137_235'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+							alt="arrow" />
+					</div>
+					<div class="planet-comparison__item planet-comparison__item--2">
+						<img
+							src="/assets/Earth.png"
+							alt="Earth" />
+						<div
+							class="planet-comparison__number planet-comparison__number_diameter">
+							0
+						</div>
+						<div class="planet-comparison__descr">
+							Диаметр Земли равен 159 275 уложенным смартфонам
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Температура -->
+			<div
+				class="container__block"
+				data-type="temperature">
+				<h1 class="title">Температура, °C</h1>
+				<p class="descr">на поверхности или в верхних слоях атмосферы</p>
+				<div class="planet-comparison align-items-start">
+					<div class="planet-comparison__item planet-comparison__item--1">
+						<span class="planet-comparison__number_emoji">❄️</span>
+
+						<div
+							class="planet-comparison__number planet-comparison__number_temp">
+							0
+						</div>
+
+						<div class="planet-comparison__descr">
+							Средняя температура на Марсе — -63 °C, холоднее, чем в
+							морозильнике
+						</div>
+					</div>
+
+					<div class="planet-comparison__arrow">
+						<img
+							src="data:image/svg+xml,%3csvg%20width='52'%20height='76'%20viewBox='0%200%2052%2076'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_137_235)'%3e%3cpath%20d='M43%2010H35V18H27V26H19V34H11V42H19V50H27V58H35V66H43V50H35V42H27V34H35V26H43V10Z'%20fill='%23FCB303'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_137_235'%20x='0'%20y='0'%20width='52'%20height='76'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dx='-1'/%3e%3cfeGaussianBlur%20stdDeviation='5'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.988235%200%200%200%200%200.701961%200%200%200%200%200.0117647%200%200%200%200.5%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_137_235'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_137_235'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+							alt="arrow" />
+					</div>
+
+					<div class="planet-comparison__item planet-comparison__item--2">
+						<div
+							class="planet-comparison__number planet-comparison__number_temp">
+							15
+						</div>
+						<span class="planet-comparison__number_emoji">☕️</span>
+
+						<div class="planet-comparison__descr">
+							Средняя температура Земли — 15 °C, как у остывшего кофе
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Масса -->
+			<div
+				class="container__block"
+				data-type="mass">
+				<h1 class="title">Масса</h1>
+				<p class="descr">Относительная масса планеты в массах Земли</p>
+				<div class="planet-comparison">
+					<div class="planet-comparison__item planet-comparison__item--1">
+						<div class="planet-comparison__img-wrapper"></div>
+
+						<div
+							class="planet-comparison__number planet-comparison__number_mass">
+							0
+						</div>
+						<div class="planet-comparison__descr">
+							Масса Марса равна 0,007 массам Урана
+						</div>
+					</div>
+
+					<div class="planet-comparison__arrow">
+						<img
+							src="data:image/svg+xml,%3csvg%20width='52'%20height='76'%20viewBox='0%200%2052%2076'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_137_235)'%3e%3cpath%20d='M43%2010H35V18H27V26H19V34H11V42H19V50H27V58H35V66H43V50H35V42H27V34H35V26H43V10Z'%20fill='%23FCB303'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_137_235'%20x='0'%20y='0'%20width='52'%20height='76'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dx='-1'/%3e%3cfeGaussianBlur%20stdDeviation='5'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.988235%200%200%200%200%200.701961%200%200%200%200%200.0117647%200%200%200%200.5%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_137_235'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_137_235'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+							alt="arrow" />
+					</div>
+					<div class="planet-comparison__item planet-comparison__item--2">
+						<div class="planet-comparison__img-wrapper"></div>
+
+						<div
+							class="planet-comparison__number planet-comparison__number_mass">
+							0
+						</div>
+						<div class="planet-comparison__descr">
+							Масса Земли равна 0,069 массам Урана
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Орбита -->
+			<div
+				class="container__block"
+				data-type="orbit">
+				<h1 class="title">Орбита</h1>
+				<p class="descr">Среднее расстояние от планеты до Солнца</p>
+				<div class="planet-comparison">
+					<div class="planet-comparison__item planet-comparison__item--1">
+						<div class="planet-comparison__img-wrapper"></div>
+						<div
+							class="planet-comparison__number planet-comparison__number_orbit">
+							0
+						</div>
+						<div class="planet-comparison__descr">
+							Орбита Марса равна 1,52 а.е. от Солнца
+						</div>
+					</div>
+					<div class="planet-comparison__arrow">
+						<img
+							src="data:image/svg+xml,%3csvg%20width='52'%20height='76'%20viewBox='0%200%2052%2076'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_137_235)'%3e%3cpath%20d='M43%2010H35V18H27V26H19V34H11V42H19V50H27V58H35V66H43V50H35V42H27V34H35V26H43V10Z'%20fill='%23FCB303'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_137_235'%20x='0'%20y='0'%20width='52'%20height='76'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dx='-1'/%3e%3cfeGaussianBlur%20stdDeviation='5'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.988235%200%200%200%200%200.701961%200%200%200%200%200.0117647%200%200%200%200.5%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_137_235'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_137_235'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+							alt="arrow" />
+					</div>
+					<div class="planet-comparison__item planet-comparison__item--2">
+						<div class="planet-comparison__img-wrapper"></div>
+						<div
+							class="planet-comparison__number planet-comparison__number_orbit">
+							0
+						</div>
+						<div class="planet-comparison__descr">
+							Орбита Земли равна 1,00 а.е. от Солнца
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="relative-wrapper">
+			<div class="sun__container">
+				<img
+					src="/assets/sun.png"
+					alt="sun"
+					class="sun__img" />
+			</div>
+			<div class="distance__container">
+				<img
+					src="/assets/distance.svg"
+					alt="distance"
+					class="distance__img" />
+			</div>
+		</div>
+
+		<div class="overlay"></div>
+
+	</body>
+</html>

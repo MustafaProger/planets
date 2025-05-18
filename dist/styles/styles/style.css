@@ -1,0 +1,207 @@
+@import url("animations.css");
+@import url("custom-select.css");
+
+@font-face {
+	font-family: "PxPlus ToshibaSat";
+	src: url("../fonts/PxPlus_ToshibaSat_8x14.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: "PxPlus ToshibaSat", monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #010103;
+	overflow-x: hidden;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logo img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 840px;
+	margin: 100px auto 0 auto;
+	padding: 0 15px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../img/overlay.png");
+	background-repeat: repeat;
+	background-size: 100% auto;
+	opacity: 0.05;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.container__block {
+	margin: 100px 0;
+}
+
+.title {
+	margin-bottom: 20px;
+	color: #9fecd2;
+	font-size: clamp(36px, 5vw, 48px);
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0 2px 20px rgba(126, 194, 197, 0.8), 0 -1px 1px #609433,
+		0 1px 1px #5c9cca;
+}
+
+.descr {
+	color: #81b0b7;
+	font-size: clamp(18px, 3vw, 26px);
+	text-transform: lowercase;
+	text-align: center;
+	text-shadow: 0 2px 35px rgba(129, 176, 183, 0.6), 0 -1px 1px #609433,
+		0 1px 1px #5c9cca;
+}
+
+.planet-comparison {
+	margin: 30px 0;
+	display: grid;
+	grid-template-columns: minmax(300px, auto) 1fr minmax(300px, auto);
+	justify-items: center;
+	align-items: end;
+	gap: 30px;
+}
+
+.align-items-start {
+	align-items: start;
+}
+
+.planet-comparison__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+[data-type="temperature"] .planet-comparison__item {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(2, auto);
+	gap: 30px 15px;
+}
+
+[data-type="temperature"] .planet-comparison__descr {
+	grid-column: 1/3;
+}
+
+[data-type="temperature"]
+	.planet-comparison__item--1
+	.planet-comparison__number_temp {
+	justify-self: start;
+}
+
+[data-type="temperature"]
+	.planet-comparison__item--2
+	.planet-comparison__number_temp {
+	justify-self: end;
+}
+
+[data-type="temperature"]
+	.planet-comparison__item--1
+	.planet-comparison__number_emoji {
+	justify-self: end;
+}
+
+[data-type="temperature"] .planet-comparison__number_emoji {
+	font-size: 35px;
+}
+
+[data-type="mass"] .planet-comparison__img-wrapper {
+	max-width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+[data-type="mass"] .planet-comparison__item img {
+	width: 24px;
+}
+
+.planet-comparison__arrow {
+	align-self: center;
+}
+
+.planet-comparison__number {
+	font-size: clamp(36px, 4vw, 48px);
+	color: #d9d9d9;
+	text-shadow: 0 2px 35px rgba(255, 255, 255, 0.4), 0 -1px 1px #947533,
+		0 1px 1px #cab05c;
+}
+
+.planet-comparison__descr {
+	text-align: center;
+	font-size: clamp(18px, 2.5vw, 24px);
+	color: #d9d9d9;
+	line-height: 27px;
+	text-shadow: 0 2px 35px rgba(255, 255, 255, 0.4), 0 -1px 1px #947533,
+		0 1px 1px #cab05c;
+}
+
+.relative-wrapper {
+	position: absolute;
+}
+
+.sun__container {
+	position: absolute;
+	top: -1300px;
+	right: 60%;
+	z-index: 1;
+}
+
+.sun__img {
+	display: block;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.distance__container {
+	position: relative;
+	right: 10%;
+}
+
+
+@media (max-width: 1600px) {
+	.relative-wrapper {
+		display: none;
+	}
+}
+
+@media (max-width: 813px) {
+	.planet-selectors {
+		flex-direction: column;
+	}
+
+	.planet-comparison {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(3, auto);
+		gap: 30px;
+	}
+
+	.planet-comparison__arrow {
+		transform: rotate(90deg);
+	}
+}

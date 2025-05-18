@@ -1,0 +1,134 @@
+.planet-selectors {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	margin-bottom: 100px;
+}
+
+.custom-select {
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	font-family: "Press Start 2P", monospace;
+}
+
+.select-button {
+	width: 100%;
+	background: transparent;
+	color: #fff;
+	border: 1px solid #96856A;
+	padding: 0 0 0 20px;
+	font-size: 28px;
+	text-align: left;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	font-family: inherit;
+	box-shadow: 0 2px 12px #000a;
+	position: relative;
+	letter-spacing: 1px;
+	transition: filter 0.18s;
+	border-bottom: 1px solid #38312B;
+	border-left: 1px solid rgb(129, 114, 91);
+}
+
+.select-button:focus {
+	outline: 2px solid #fff;
+	filter: brightness(1.08);
+}
+
+.selected-value {
+	flex: 1;
+	font-size: 28px;
+}
+
+.select-arrow {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background: url("../img/arrow/arrow-bottom.png")
+		no-repeat center/50px 50px;
+	margin-left: 12px;
+	pointer-events: none;
+}
+
+.custom-select.open .select-arrow {
+	transform: rotate(180deg);
+}
+
+.select-dropdown {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(100% + 7px);
+	background: #444548;
+	border: 1px solid #7e5f0c;
+	box-shadow: 0 10px 30px #000c;
+	margin: 0;
+	padding: 10px 0;
+	z-index: 99;
+	font-size: 28px;
+}
+
+.custom-select.open .select-dropdown {
+	display: block;
+	animation: fadeIn 0.18s cubic-bezier(0.4, 2, 0.6, 1);
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-8px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.select-option {
+	color: #81b0b7;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: background 0.12s, color 0.12s;
+	font-family: inherit;
+	font-size: 28px;
+	background: none;
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+}
+
+.select-option:hover,
+.select-option:focus {
+	color: #fff;
+}
+
+.select-option.selected {
+	position: relative;
+	top: 0;
+	left: 12.5px;
+}
+
+.select-option.selected::before {
+	content: url("../img/arrow/chevron-active.svg");
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	width: auto;
+	height: auto;
+}
+
+.select-option[hidden] {
+	display: none;
+}
+
+.vs {
+	font-size: 64px;
+	color: rgb(150, 133, 106);
+}
