@@ -1,5 +1,6 @@
 import setupCustomSelect from "./custom-select";
 import setupSelect from "./visualization";
+import animation from "./animation";
 
 document.addEventListener("DOMContentLoaded", () => {
 	const select1 = document.getElementById("select-1");
@@ -14,91 +15,122 @@ document.addEventListener("DOMContentLoaded", () => {
 	select1.updateOptions();
 	select2.updateOptions();
 
-	function getItem(dataType, side) {
-		return document.querySelector(
+	const getItem = (dataType, side) =>
+		document.querySelector(
 			`.container__block[data-type="${dataType}"] .planet-comparison__item--${side}`
 		);
-	}
 
-	setupSelect(
-		"select-1",
-		getItem("diameter", 1),
-		"planet-comparison__number_diameter",
-		"diameter.km",
-		"planet-comparison__descr",
-		"diameter.comparison",
-		true
+	const configs = [
+		{
+			selectId: "select-1",
+			dataType: "diameter",
+			side: 1,
+			numberClass: "planet-comparison__number_diameter",
+			pathToValue: "diameter.km",
+			descrClass: "planet-comparison__descr",
+			descrValue: "diameter.comparison",
+			hasImage: true,
+		},
+		{
+			selectId: "select-2",
+			dataType: "diameter",
+			side: 2,
+			numberClass: "planet-comparison__number_diameter",
+			pathToValue: "diameter.km",
+			descrClass: "planet-comparison__descr",
+			descrValue: "diameter.comparison",
+			hasImage: true,
+		},
+		{
+			selectId: "select-1",
+			dataType: "temperature",
+			side: 1,
+			numberClass: "planet-comparison__number_temp",
+			pathToValue: "temperature.celsius.average",
+			descrClass: "planet-comparison__descr",
+			descrValue: "temperature.household.description",
+			hasImage: false,
+			emojiClass: "planet-comparison__number_emoji",
+			emojiValue: "temperature.household.item",
+		},
+		{
+			selectId: "select-2",
+			dataType: "temperature",
+			side: 2,
+			numberClass: "planet-comparison__number_temp",
+			pathToValue: "temperature.celsius.average",
+			descrClass: "planet-comparison__descr",
+			descrValue: "temperature.household.description",
+			hasImage: false,
+			emojiClass: "planet-comparison__number_emoji",
+			emojiValue: "temperature.household.item",
+		},
+		{
+			selectId: "select-1",
+			dataType: "mass",
+			side: 1,
+			numberClass: "planet-comparison__number_mass",
+			pathToValue: "mass.uranusMass",
+			descrClass: "planet-comparison__descr",
+			descrValue: "mass.comparison",
+			hasImage: "planet-comparison__img",
+		},
+		{
+			selectId: "select-2",
+			dataType: "mass",
+			side: 2,
+			numberClass: "planet-comparison__number_mass",
+			pathToValue: "mass.uranusMass",
+			descrClass: "planet-comparison__descr",
+			descrValue: "mass.comparison",
+			hasImage: "planet-comparison__img",
+		},
+		{
+			selectId: "select-1",
+			dataType: "orbit",
+			side: 1,
+			numberClass: "planet-comparison__number_orbit",
+			pathToValue: "orbit.distanceFromSun.au",
+			descrClass: "planet-comparison__descr",
+			descrValue: "orbit.comparison",
+		},
+		{
+			selectId: "select-2",
+			dataType: "orbit",
+			side: 2,
+			numberClass: "planet-comparison__number_orbit",
+			pathToValue: "orbit.distanceFromSun.au",
+			descrClass: "planet-comparison__descr",
+			descrValue: "orbit.comparison",
+		},
+	];
+
+	configs.forEach(
+		({
+			selectId,
+			dataType,
+			side,
+			numberClass,
+			pathToValue,
+			descrClass,
+			descrValue,
+			hasImage = false,
+			emojiClass = null,
+			emojiValue = null,
+		}) => {
+			setupSelect(
+				selectId,
+				getItem(dataType, side),
+				numberClass,
+				pathToValue,
+				descrClass,
+				descrValue,
+				hasImage,
+				emojiClass,
+				emojiValue
+			);
+		}
 	);
 
-	setupSelect(
-		"select-2",
-		getItem("diameter", 2),
-		"planet-comparison__number_diameter",
-		"diameter.km",
-		"planet-comparison__descr",
-		"diameter.comparison",
-		true
-	);
-
-	setupSelect(
-		"select-1",
-		getItem("temperature", 1),
-		"planet-comparison__number_temp",
-		"temperature.celsius.average",
-		"planet-comparison__descr",
-		"temperature.household.description",
-		false,
-		"planet-comparison__number_emoji",
-		"temperature.household.item"
-	);
-
-	setupSelect(
-		"select-2",
-		getItem("temperature", 2),
-		"planet-comparison__number_temp",
-		"temperature.celsius.average",
-		"planet-comparison__descr",
-		"temperature.household.description",
-		false,
-		"planet-comparison__number_emoji",
-		"temperature.household.item"
-	);
-
-	setupSelect(
-		"select-1",
-		getItem("mass", 1),
-		"planet-comparison__number_mass",
-		"mass.uranusMass",
-		"planet-comparison__descr",
-		"mass.comparison",
-		"planet-comparison__img"
-	);
-
-	setupSelect(
-		"select-2",
-		getItem("mass", 2),
-		"planet-comparison__number_mass",
-		"mass.uranusMass",
-		"planet-comparison__descr",
-		"mass.comparison",
-		"planet-comparison__img"
-	);
-
-	setupSelect(
-		"select-1",
-		getItem("orbit", 1),
-		"planet-comparison__number_orbit",
-		"orbit.distanceFromSun.au",
-		"planet-comparison__descr",
-		"orbit.comparison"
-	);
-
-	setupSelect(
-		"select-2",
-		getItem("orbit", 2),
-		"planet-comparison__number_orbit",
-		"orbit.distanceFromSun.au",
-		"planet-comparison__descr",
-		"orbit.comparison"
-	);
+	animation();
 });
